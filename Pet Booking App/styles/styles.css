@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,600;1,100&family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400&display=swap');
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    
+
+}
+
+nav {
+    background-color: #E5AF42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3C4048;
+    padding: 15px 50px;
+    border-bottom: 2px solid #ccc; 
+    
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+.nav-links h1 {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    font-size: 48px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.flex img{
+    margin-top: 30px;
+ width: 220px;
+height: 250px;
+}
+.about-us {
+    margin-right: 10px;
+}
+h3{
+   font-size:  36px;
+   
+}
+
+.flex p{
+
+    /*12 wAS NOT lOOKING GOOD*/
+    font-size:  16px;
+    margin-top: 10px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+    
+}
+.index .flex{
+    justify-content: space-around;
+}
+.index a{
+    background-color: #E5AF42;
+display: flex;
+justify-content: space-between;
+}
+
+.index .flex {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px; 
+    width: 100%;
+}
+
+.fake-button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.fake-button:hover {
+    background-color: #0056b3; 
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #E5AF42;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+
+}
+footer a,p{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    opacity: 0.8;
+
+}
+
+footer {
+    margin-top: 50px; 
+}
+
+/*contact*/
+
+main.contacts {
+    text-align: center;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ h1{
+      margin-top: 30px;
+font-size: 30px;
+margin-top: 20px;
+text-align: center;
+word-spacing: 0.1rem;
+letter-spacing: 0.1rem;
+}
+
+.flexs{
+    margin-top: 13px;
+}
+
+label {
+    width: 150px;
+    text-align: center;
+    
+   
+}
+input{
+    margin-left:25px;
+}
+input,
+textarea {
+    width: 300px;
+    padding: 2px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    border: 1px solid black; 
+}
+
+.contacts button{
+width: 300px;
+margin-left: 120px;
+margin-top: 20px;
+background-color: #E5AF42;
+color: black;
+}
+
+textarea {
+    height: 150px;
+}
+
+
+
+
+
+/*Booking*/
+
+.booking-page{
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.booking-page h2{
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.booking-page p{
+    font-size: 14px;
+    opacity: 1;
+    margin-top: 10px;
+    color: black;
+}
+.booking-page ul li{
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+.booking-page ul li:hover{
+    background-color: #E5AF42;
+    cursor: pointer;
+}
+
+.booking-page p span{
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 100px;
+}
+.booking-page p span:hover{
+    background-color: #E5AF42;
+    cursor: pointer;
+}
+
+.booking-page .fake-button{
+    background-color: #E5AF42;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.booking-page .fake-button:hover{
+    background-color: #0056b3;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+.booking-page .large-text{
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+}

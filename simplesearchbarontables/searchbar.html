@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hammersmith+One&family=
+    Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Passions+Conflict&family=Permanent+
+    Marker&family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #EFF5F5;
+        }
+        #myTable{
+            text-align: center;
+            width: 100%;
+        }
+        table ,td{
+            border: 1px solid black;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem;
+        }
+        th , td{
+            text-align: center;
+            padding: 20px;
+            
+        }
+        th{
+            background-color: #497174;
+            font-weight: bolder;
+            font-size: 2rem;
+            font-family: 'Raleway', sans-serif;
+        }
+        td{
+            background-color: #6D9886;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            letter-spacing: .1rem;
+            line-height: 4rem;
+            font-size: 3rem;
+            font-family: 'Permanent Marker', cursive;
+        }
+        h1::first-letter{
+            font-size: 5rem;
+            color: crimson;
+            font-family: 'Permanent Marker', cursive;
+        }
+        #search{
+            width: 99%;
+            padding: 15px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: rgb(73, 66, 66);
+            color: white;
+        }
+        
+    </style>
+</head>
+<h1>Search Bar Using Javascript</h1>
+
+<input type="text" id="search" placeholder="Enter Name" onkeyup="searchFunction()">
+<table id="myTable"  >
+    <tr class="heading" >
+        <th>Name</th>
+        <th >Department</th>
+        <th >Age</th>
+    </tr> 
+
+    <tr>
+<td>Soban</td>
+<td>Bscs</td>
+<td>21</td>
+    </tr>
+
+    <tr>
+        <td>Wajhi</td>
+        <td>Bba</td>
+        <td>22</td>
+            </tr>
+
+
+            <tr >
+                <td>Awais</td>
+                <td>Bscs</td>
+                <td>24</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saim</td>
+                        <td>Bds</td>
+                        <td>19</td>
+                            </tr>
+
+                            <tr>
+                                <td>Imran</td>
+                                <td>Bscs</td>
+                                <td>20</td>
+                                    </tr>
+
+                                    <tr >
+                                        <td>Junaid</td>
+                                        <td>Bscs</td>
+                                        <td>24</td>
+                                            </tr>
+
+                                            <tr >
+                                                <td>Hamza</td>
+                                                <td>Bscs</td>
+                                                <td>24</td>
+                                                    </tr>
+
+                                                    <tr >
+                                                        <td>Mubashir</td>
+                                                        <td>SE</td>
+                                                        <td>20</td>
+                                                            </tr>
+
+                                                            <tr >
+                                                                <td>Hassan</td>
+                                                                <td>SE</td>
+                                                                <td>21</td>
+                                                                    </tr>
+</table>
+
+
+<script>
+
+    function searchFunction()
+    {
+    var search=document.getElementById('search').value.toUpperCase();
+
+    let myTable=document.getElementById('myTable');
+
+    let tr=myTable.getElementsByTagName('tr');
+
+    for(var x=0; x < tr.length ; x++)
+    {
+        //fetching first value of Table data
+            let td=tr[x].getElementsByTagName('td')[0];
+
+            if(td){
+                var data=td.textContent  || td.innerHTML;
+
+                if(data.toUpperCase().indexOf(search) > -1){
+                    tr[x].style.display="";
+                }
+                else{
+                    tr[x].style.display="none";
+                }
+    }
+    }
+    }
+</script>
+</body>
+</html>

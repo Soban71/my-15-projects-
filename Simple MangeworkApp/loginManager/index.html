@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/Style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Manager Version 1</title>
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login Manager Version 1</h2>
+    
+    <p class="Paragraph">Create, Update, Delete login using jQuery. This version will be saved in the database.</p>
+
+    <button id="openModalBtn">Add Login</button>
+
+    <div class="modal" id="loginModal">
+      <span id="close-btn" onclick="closePopup()">&#10006;</span>
+      <h2>Signup</h2>
+      <form id="signupForm">
+          <label for="userName">
+              <span>Username:</span>
+              <input type="text" id="userName" name="userName" required>
+          </label>
+  
+          <label for="URLField">
+              <span>Website:</span>
+              <input type="text" id="URLField" name="URLField" required>
+          </label>
+  
+          <label for="password">
+              <span>Password:</span>
+              <input type="password" id="password" name="password" required>
+          </label>
+  
+          <label for="confirmPassword">
+              <span>Repeat Password:</span>
+              <input type="password" id="confirmPassword" name="confirmPassword" required>
+          </label>
+  
+          <button type="submit">Create new Login</button>
+      </form>
+    </div>
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="loginmanger.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    function openPopup() {
+      document.getElementById('loginModal').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('loginModal').style.display = 'none';
+    }
+
+    document.getElementById('openModalBtn').addEventListener('click', openPopup);
+  </script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hammersmith+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Passions+Conflict&family=Raleway&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#Home{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(IMages/back2.jpg);  
+    width: 100%;
+    height: 100vh;
+ color: white;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+   margin-top: 100px;
+   align-items: center;
+   padding: 7% 14%;   
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1rem;
+    opacity: 0.6;
+
+}
+#Home p{
+    margin-top: 2rem;
+    color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  word-spacing: .2rem;
+  letter-spacing: .1rem;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem 80px;
+    justify-content: space-between;
+    align-items: center; 
+position: fixed;
+top: 0;
+text-align: center;
+background-color: #EDEDED;
+opacity: 1;
+}
+span{
+    color: #F56D91;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.menu a:nth-child(1):hover{
+    color: white;
+    border-bottom: 3px solid #333;
+
+}
+.menu a:nth-child(2):hover{
+    color: white;
+    border-bottom: 3px solid #333;
+
+}
+.menu a:nth-child(3):hover{
+    color: white;
+    border-bottom: 3px solid #333;
+
+}
+
+.menu a:nth-child(4):hover{
+    color: white;
+    border-bottom: 3px solid #333;
+}
+
+
+.icons{
+ margin-top: 1rem;
+   font-size: 2.4rem;
+   transform: rotate(270deg);
+}
+.menu a:hover{
+    color: #F56D91;
+}
+.icon{
+    margin-right: 8rem;
+    font-size: 2rem;
+    
+}
+.icon i{
+    font-size: 20px;
+}
+.icon i:hover{
+    color: #F56D91;
+}
+.icon a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    background-color: #665A48;
+    border-radius: 5px; 
+    margin-left: 20px;
+}
+.icon a:hover{
+background: pink;
+}
+.logo{
+    font-size: 1.5rem;
+    font-family: 'Passions Conflict', cursive;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: black;
+}
+/*Collection*/
+
+#Collection h1{
+    color: black;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7% 14%;
+    text-align: center;
+
+}
+#Collection {
+    padding: 4% 8%;
+    position: relative;
+}
+#Collection img {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-top: 3rem;
+filter: brightness(50%);
+border-radius: 10px;
+}
+#Collection .btn9{
+    position: absolute;
+    top: 48%;
+    color: white;
+    left: 19%;
+    transform: translate(-50%, -50%);
+  border-radius: 100%;
+    opacity:1;
+     font-weight: bolder;
+    background-color: #5F9DF7;
+    transition-duration: .7s;
+    width: 7%;
+    height: 8%;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+#Collection h6{
+
+    font-size: 1.5rem;
+    position: absolute;
+    top: 53%;
+    color: white;
+    left: 16%;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#Collection .btn9:hover{
+    background-color: #FDFF00;
+}
+#Third{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(IMages/background3.jpg);
+padding: 5% 10%;
+background-repeat: no-repeat;
+margin-top: 4rem;
+}
+#Third h2{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+#Third h3{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: .2rem;
+    line-height: 200%;
+    
+}
+#Third p{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #5B5656;
+    text-align: center;
+    font-weight: bolder;
+}
+#Third button{
+    margin-top: 1.5rem;
+    width: 40%;
+    height: 20%;
+    border-radius:3%;
+    margin-left: 10rem;
+    border: none;
+    background-color: #38E54D;
+    color: white;
+    font-weight: bolder;
+}
+#Third button:hover{
+    background-color: #e2e21c;
+    transition: .5s ease-in-out;
+}
+#Selection{
+    margin-top: 7%;
+    padding: 7% 11%;
+    text-align: center;
+    position: relative;
+    text-align: center;
+
+}
+#Selection h1{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;  
+    margin-bottom: 5rem;
+}
+#Selection h6{
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;  
+    margin-right: 1.5rem;
+}
+#Selection img{
+    margin-top: 3rem;
+    padding: 5%;
+    display: block;
+    margin-left: 1rem;
+}
+
+#Selection button {
+    position: absolute;
+    top: 60%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+  border-radius: 8px;
+    opacity:0;
+    color: white;
+    font-weight: bolder;
+    background-color: #5B5656;
+    width: 14%;
+    height: 8%;
+    text-transform: uppercase;
+    vertical-align: middle;
+    transition: .7s ease-in-out;
+
+}
+#Selection button:hover{
+    opacity: 0.4;
+}
+.bor{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    border-top-right-radius: 80px;
+    padding: 30px;
+    border-bottom-left-radius: 100px;
+ 
+}
+
+
+#Selection .icons{
+font-size: 0.8rem;
+color: yellow;
+margin-right: 0.6rem;
+padding: -0.5;
+}
+.noicon{
+    font-size: 0.8rem;   
+    margin-right: 1rem;
+}
+#Selection h6{
+    color: #5B5656;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: .1rem;
+    
+}
+#Off{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(IMages/background3.jpg);
+    padding: 7% 10%;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+}
+#Off h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: .1rem;  
+    word-spacing: .1rem;
+}
+#Off h6{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+#Off .Btn7{
+    margin-top: 3rem;
+    width: 40%;
+    height: 25%;
+    border-radius:5%;
+    margin-left: 10rem;
+    border: none;
+    background-color: #38E54D;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+}
+#Off button:hover{
+    background-color: #e2e21c;
+    transition: .5s ease-in-out;
+}
+#Booking{
+    padding: 7% 14%;
+}
+#Booking h1{
+    color: black;
+    font-size: 4rem;
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+    Word-spacing: .1rem;
+}
+#Booking input{
+    margin-top: 5rem;
+  
+    padding: 3%;
+    width: 100%; 
+}
+#Booking  .Events{
+    margin-top: 5rem;
+    padding: 3%;
+    width: 100%; 
+}
+#Booking input:hover .Events:hover{
+border: 1px solid blue;
+}
+#Booking textarea{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#Booking .btn9{
+    margin-top: 2rem;
+    width: 65%;
+    height: 60%;
+    border-radius:5%;
+    border: none;
+    background-color: #38E54D;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bolder; 
+}
+#Booking .btn9:hover{
+    background-color: #e2e21c;
+    transition: .5s ease-in-out;
+}
+#Booking .head{
+    margin: 2rem;
+    text-align:center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    word-spacing: .1rem;
+}
+#tetxfield{
+    font-size: 1rem;
+}
+#Quality{
+    padding: 4% 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+#Quality h3{
+    margin-top: 2rem;
+    color: black;
+    font-size: 1.2rem;
+    color: #1F4068;
+    opacity: 0.8;
+}
+.box{
+    text-align: center;
+    color: #00A8CC;
+}
+i:hover{
+    color: #06283D;
+}
+#Quality p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    word-spacing: .1rem;
+    color: #090910;
+    text-align: center;
+    opacity: 0.5;
+}
+
+#Footer{
+    padding: 3% 6%;
+    background-color: #090910;
+    text-align: center;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    word-spacing: .1rem;
+    color: white;
+    text-transform: uppercase;
+}
+ li{
+    margin-top: 1rem;
+list-style: none;
+color: white;
+opacity: 0.2;
+}
+.inputs{
+        width: 60%;
+        padding: 16px;
+        border: none;
+        border-radius: 10px;
+
+}
+p{
+    margin-top: 1.4rem;
+    color: white;
+    opacity: 0.2;
+}
+.button{
+    width: 30%;
+    padding: 16px;
+    background-color: #FFCB42;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}

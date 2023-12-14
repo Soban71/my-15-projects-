@@ -1,0 +1,30 @@
+body{
+	background-color: black;
+}
+.head{
+
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+h1{
+	color: #4ECCA3;;
+	font-family: monospace;
+	font-size: 4rem;
+	font-weight:bold;
+	text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+.img1{
+	width: 8%;
+}
+.img2{
+	width: 8%;
+}
+
